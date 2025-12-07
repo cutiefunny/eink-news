@@ -922,7 +922,6 @@ app.vercel.eink_news.twa:style/Base.Widget.AppCompat.ActionBar = 0x7f0f0067
 app.vercel.eink_news.twa:attr/submitBackground = 0x7f0300e2
 app.vercel.eink_news.twa:attr/state_above_anchor = 0x7f0300e0
 app.vercel.eink_news.twa:id/report_drawn = 0x7f080078
-app.vercel.eink_news.twa:mipmap/ic_maskable = 0x7f0c0001
 app.vercel.eink_news.twa:dimen/hint_alpha_material_dark = 0x7f06005f
 app.vercel.eink_news.twa:color/primary_material_light = 0x7f050051
 app.vercel.eink_news.twa:attr/listChoiceIndicatorSingleAnimated = 0x7f0300a2
