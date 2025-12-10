@@ -143,16 +143,7 @@ function App() {
         <h1 style={styles.title}>E-ink News</h1>
         <div style={styles.headerBtnGroup}>
           
-          {/* E-ink 기기가 아닐 때만 읽기 버튼 표시 */}
-          <Show when={!isEink}>
-            <button 
-              style={isPlaying() ? styles.activeBtn : styles.btn} 
-              onClick={toggleReading}
-              disabled={newsData.loading || newsData.error}
-            >
-              {isPlaying() ? '■ 중지' : '▶ 읽기'}
-            </button>
-          </Show>
+          {/* 읽기 버튼 제거됨 */}
           
           <button style={styles.btn} onClick={handleRefresh}>
             {newsData.loading ? '로딩...' : '새로고침'}
@@ -219,70 +210,70 @@ function getCategoryName(cat) {
 const styles = {
   container: {
     "max-width": "800px",
-    margin: "0 auto",
-    padding: "0",
+    "margin": "0 auto",
+    "padding": "0",
     "background-color": "#ffffff",
     "min-height": "100vh",
     "font-family": "'Noto Sans KR', sans-serif",
-    color: "#000000",
+    "color": "#000000",
   },
   header: {
-    display: "flex",
+    "display": "flex",
     "justify-content": "space-between",
     "align-items": "center",
-    padding: "1rem 1.2rem",
+    "padding": "1rem 1.2rem",
     "border-bottom": "3px solid #000000", 
   },
   title: {
-    margin: 0,
+    "margin": 0,
     "font-size": "1.8rem",
     "font-weight": "900",
     "letter-spacing": "-1px",
   },
   headerBtnGroup: {
-    display: "flex",
-    gap: "0.5rem",
+    "display": "flex",
+    "gap": "0.5rem",
   },
   btn: {
-    padding: "0.5rem 0.8rem",
+    "padding": "0.5rem 0.8rem",
     "font-size": "0.9rem",
-    border: "2px solid #000000",
-    background: "#ffffff",
-    cursor: "pointer",
+    "border": "2px solid #000000",
+    "background": "#ffffff",
+    "cursor": "pointer",
     "font-weight": "bold",
-    color: "#000000",
+    "color": "#000000",
     "white-space": "nowrap",
   },
   activeBtn: {
-    padding: "0.5rem 0.8rem",
+    "padding": "0.5rem 0.8rem",
     "font-size": "0.9rem",
-    border: "2px solid #000000",
-    background: "#000000",
-    cursor: "pointer",
+    "border": "2px solid #000000",
+    "background": "#000000",
+    "cursor": "pointer",
     "font-weight": "bold",
-    color: "#ffffff",
+    "color": "#ffffff",
     "white-space": "nowrap",
   },
   content: {
-    padding: "0",
+    "padding": "0",
   },
   statusMsg: {
-    padding: "3rem",
+    "padding": "3rem",
     "text-align": "center",
     "font-size": "1.2rem",
     "font-weight": "bold",
   },
   list: {
-    display: "flex",
+    "display": "flex",
     "flex-direction": "column",
   },
   card: {
-    padding: "1.5rem 1.2rem", 
+    "padding": "1.5rem 1.2rem", 
     "border-bottom": "1px solid #000000",
     "transition": "background-color 0.3s"
   },
   meta: {
-    display: "flex",
+    "display": "flex",
     "justify-content": "space-between",
     "margin-bottom": "0.6rem",
     "font-size": "0.85rem",
@@ -292,32 +283,32 @@ const styles = {
   time: {
     "font-family": "monospace", 
     "font-size": "0.9rem",
-    color: "#000000",
+    "color": "#000000",
   },
   newsTitle: {
-    margin: "0 0 1rem 0",
+    "margin": "0 0 1rem 0",
     "font-size": "1.4rem",
     "line-height": "1.3",
     "word-break": "keep-all",
     "font-weight": "800",
   },
   link: {
-    color: "#000000",
+    "color": "#000000",
     "text-decoration": "none",
   },
   summaryBox: {
-    padding: "0.8rem",
-    border: "2px solid #000000", 
+    "padding": "0.8rem",
+    "border": "2px solid #000000", 
     "background-color": "#ffffff",
   },
   summaryText: {
-    margin: 0,
+    "margin": 0,
     "font-size": "1.05rem",
     "line-height": "1.6",
     "white-space": "pre-wrap",
   },
   footer: {
-    padding: "2rem",
+    "padding": "2rem",
     "text-align": "center",
     "font-size": "0.8rem",
     "border-top": "3px solid black",
