@@ -177,9 +177,12 @@ function App() {
                         </a>
                       </h2>
 
-                      <div style={styles.summaryBox}>
-                        <p style={styles.summaryText}>{item.summary}</p>
-                      </div>
+                      {/* 조건부 렌더링: 요약문 길이가 제목 길이의 1.5배(150%) 초과일 때만 표시 */}
+                      <Show when={item.summary && item.title && (item.summary.length > item.title.length * 1.5)}>
+                        <div style={styles.summaryBox}>
+                          <p style={styles.summaryText}>{item.summary}</p>
+                        </div>
+                      </Show>
                     </article>
                   )}
                 </For>
